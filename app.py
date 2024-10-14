@@ -53,7 +53,7 @@ def get_edificios():
 def get_tipos_accesibilidad():
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT DISTINCT * FROM tipos_accesibilidad")  # Asegúrate de usar DISTINCT
+    cursor.execute("SELECT DISTINCT * FROM tipos_accesibilidad")
     tipos = cursor.fetchall()
     cursor.close()
     conn.close()
