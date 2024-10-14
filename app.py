@@ -48,10 +48,6 @@ def get_edificios():
         if 'conn' in locals():
             conn.close()
 
-@app.route('/')
-def index():
-    return render_template('tu_template.html')
-
 # Ruta para obtener tipos de accesibilidad
 @app.route('/get_tipos_accesibilidad')
 def get_tipos_accesibilidad():
